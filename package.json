@@ -1,0 +1,19 @@
+{
+  "name": "notespacer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/golubs/notespacer.git"
+  },
+  "author": "Oleg Golubs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/golubs/notespacer/issues"
+  },
+  "homepage": "https://github.com/golubs/notespacer#readme"
+}
