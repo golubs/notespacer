@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/golubs/notespacer/issues"
   },
-  "homepage": "https://github.com/golubs/notespacer#readme"
+  "homepage": "https://github.com/golubs/notespacer#readme",
+  "devDependencies": {
+    "prettier": "1.19.1"
+  }
 }
