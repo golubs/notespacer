@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build-client": "cd client && npm run build",
+    "build-storybook": "cd client && npm run build-storybook",
+    "build": "npm run build-storybook && npm run build-client",
     "client": "cd client && npm start",
-    "test": "cd client && npm test"
+    "storybook": "cd client && npm run storybook",
+    "test": "cd client && npm test",
+    "postinstall": "cd client && npm install"
   },
   "repository": {
     "type": "git",
