@@ -15,6 +15,7 @@ function GlobalStyles() {
           margin: 0;
           background: ${theme.colors.background};
           color: ${theme.colors.font};
+          font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
         }
       `}
     />
