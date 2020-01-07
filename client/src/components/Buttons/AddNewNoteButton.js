@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-const Icon = styled.img``;
-
 const Button = styled.button`
   background: ${props => props.theme.colors.primary};
   height: 70px;
@@ -14,7 +12,7 @@ const Button = styled.button`
 
 const AddNewNoteButton = () => (
   <Button>
-    <Icon src="/icons/plus.svg" />
+    <img src="/icons/plus.svg" />
   </Button>
 );
 
