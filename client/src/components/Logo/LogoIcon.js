@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const Svg = styled.svg`
-  fill: ${props => props.theme.colors.primary};
+  fill: ${props => props.theme.colors.secondary_font};
   width: 32.73px;
   height: 32.73px;
 `;
