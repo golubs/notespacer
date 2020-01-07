@@ -7,7 +7,7 @@ const Button = styled.button`
   height: 70px;
   width: 134px;
 
-  color: ${props => props.theme.colors.whitefont};
+  color: ${props => props.theme.colors.fontsecondary};
   font-size: 2.1rem;
   font-family: 'Tamil MN';
   font-weight: normal;
