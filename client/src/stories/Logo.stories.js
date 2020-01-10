@@ -1,4 +1,5 @@
 import React from 'react';
+import StoryBackground from '../components/Layout/StoryBackground';
 import LogoIcon from '../components/Logo/LogoIcon';
 import LogoText from '../components/Logo/LogoText';
 
@@ -7,9 +8,17 @@ export default {
 };
 
 export function IconLogo() {
-  return <LogoIcon />;
+  return (
+    <StoryBackground>
+      <LogoIcon />
+    </StoryBackground>
+  );
 }
 
 export function TextLogo() {
-  return <LogoText />;
+  return (
+    <StoryBackground>
+      <LogoText />
+    </StoryBackground>
+  );
 }
