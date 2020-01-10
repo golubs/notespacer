@@ -6,11 +6,12 @@ const AppName = styled.h1`
   font-family: 'Tamil MN';
   font-weight: normal;
   font-size: 35px;
-  text-align: center;
+  margin: 0;
+  padding: 0;
 `;
 
 const LogoText = () => {
-  return <AppName>Notespacer</AppName>;
+  return <AppName>NOTESPACER</AppName>;
 };
 
 export default LogoText;
