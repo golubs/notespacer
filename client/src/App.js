@@ -1,10 +1,15 @@
 import React from 'react';
+import GlobalStyles from './GlobalStyles';
+import { ThemeProvider } from 'emotion-theming';
+import light from './themes/light';
+import Intro from './pages/Intro';
 
 function App() {
   return (
-    <div>
-      <h1>Notespacer</h1>
-    </div>
+    <ThemeProvider theme={light}>
+      <GlobalStyles />
+      <Intro />
+    </ThemeProvider>
   );
 }
 
