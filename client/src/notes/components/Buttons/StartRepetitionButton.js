@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import LogoIcon from '../Logo/LogoIcon';
+import LogoIcon from '../../../shared/components/Logo/LogoIcon';
 
 const Button = styled.button`
   background: ${props => props.theme.colors.primary};

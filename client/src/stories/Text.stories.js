@@ -1,8 +1,8 @@
 import React from 'react';
-import StoryBackground from '../components/Layout/StoryBackground';
-import TextAllCapsPrimary from '../components/Text/TextAllCapsPrimary';
-import TextAllCapsSecondary from '../components/Text/TextAllCapsSecondary';
-import TextIntroSecondary from '../components/Text/TextIntroSecondary';
+import StoryBackground from '../shared/components/Layout/StoryBackground';
+import TextAllCapsPrimary from '../shared/components/Text/TextAllCapsPrimary';
+import TextAllCapsSecondary from '../shared/components/Text/TextAllCapsSecondary';
+import TextIntroSecondary from '../shared/components/Text/TextIntroSecondary';
 
 export default {
   title: 'Text'

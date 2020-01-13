@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import BackgroundPrimary from '../components/Layout/BackgroundPrimary';
-import MainContainer from '../components/Layout/MainContainer';
-import ArrowLeftSecondary from '../components/Icons/ArrowLeftSecondary';
-import TextAllCapsSecondary from '../components/Text/TextAllCapsSecondary';
-import Placeholder from '../components/Layout/Placeholder';
-import Logo from '../components/Logo/Logo';
-import TextIntroSecondary from '../components/Text/TextIntroSecondary';
-import SpaceBetweenContainer from '../components/Layout/SpaceBetweenContainer';
+import BackgroundPrimary from '../../shared/components/Layout/BackgroundPrimary';
+import MainContainer from '../../shared/components/Layout/MainContainer';
+import ArrowLeftSecondary from '../../shared/components/Icons/ArrowLeftSecondary';
+import TextAllCapsSecondary from '../../shared/components/Text/TextAllCapsSecondary';
+import Placeholder from '../../shared/components/Layout/Placeholder';
+import Logo from '../../shared/components/Logo/Logo';
+import TextIntroSecondary from '../../shared/components/Text/TextIntroSecondary';
+import SpaceBetweenContainer from '../../shared/components/Layout/SpaceBetweenContainer';
 
 const Justifier = styled.div`
   width: 100%;
