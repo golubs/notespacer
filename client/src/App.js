@@ -9,23 +9,26 @@ import {
 } from 'react-router-dom';
 
 import light from './themes/light';
-import Intro from './user/pages/Intro';
 import NewNote from './notes/pages/NewNote';
+import Notes from './notes/pages/Notes';
+import Main from './shared/components/Layout/Main';
 
 function App() {
   return (
     <ThemeProvider theme={light}>
       <GlobalStyles />
       <Router>
-        <Switch>
-          <Route path="/" exact>
-            <Intro />
-          </Route>
-          <Route path="/notes/new" exact>
-            <NewNote />
-          </Route>
-          <Redirect to="/" />
-        </Switch>
+        <Main>
+          <Switch>
+            <Route path="/" exact>
+              <Notes />
+            </Route>
+            <Route path="/notes/new" exact>
+              <NewNote />
+            </Route>
+            <Redirect to="/" />
+          </Switch>
+        </Main>
       </Router>
     </ThemeProvider>
   );
