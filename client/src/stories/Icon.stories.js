@@ -1,11 +1,11 @@
 import React from 'react';
-import StoryBackground from '../components/Layout/StoryBackground';
-import ArrowLeftSecondary from '../components/Icons/ArrowLeftSecondary';
-import ArrowRightSecondary from '../components/Icons/ArrowRightSecondary';
-import PlusPrimary from '../components/Icons/PlusPrimary';
-import CheckmarkPrimary from '../components/Icons/CheckmarkPrimary';
-import FontresizePrimary from '../components/Icons/FontresizePrimary';
-import MagnifyingGlassPrimary from '../components/Icons/MagnifyingGlassPrimary';
+import StoryBackground from '../shared/components/Layout/StoryBackground';
+import ArrowLeftSecondary from '../shared/components/Icons/ArrowLeftSecondary';
+import ArrowRightSecondary from '../shared/components/Icons/ArrowRightSecondary';
+import PlusPrimary from '../shared/components/Icons/PlusPrimary';
+import CheckmarkPrimary from '../shared/components/Icons/CheckmarkPrimary';
+import FontresizePrimary from '../shared/components/Icons/FontresizePrimary';
+import MagnifyingGlassPrimary from '../shared/components/Icons/MagnifyingGlassPrimary';
 
 export default {
   title: 'Icons'

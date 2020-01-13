@@ -1,8 +1,8 @@
 import React from 'react';
-import SquareButton from '../components/Buttons/SquareButton';
-import SquareButtonInverted from '../components/Buttons/SquareButtonInverted';
-import AddNewNoteButton from '../components/Buttons/AddNewNoteButton';
-import StartRepetitionButton from '../components/Buttons/StartRepetitionButton';
+import SquareButton from '../user/components/Buttons/SquareButton';
+import SquareButtonInverted from '../user/components/Buttons/SquareButtonInverted';
+import AddNewNoteButton from '../notes/components/Buttons/AddNewNoteButton';
+import StartRepetitionButton from '../notes/components/Buttons/StartRepetitionButton';
 
 export default {
   title: 'Buttons'
