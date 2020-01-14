@@ -1,7 +1,7 @@
 import React from 'react';
 import MainNavigation from '../../shared/components/Navigation/MainNavigation';
 
-const NewNote = () => {
+const UserNotes = () => {
   return (
     <>
       <MainNavigation />
@@ -10,4 +10,4 @@ const NewNote = () => {
   );
 };
 
-export default NewNote;
+export default UserNotes;

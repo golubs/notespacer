@@ -3,7 +3,8 @@ const light = {
     background: '#FFFFFF',
     primary: '#EE6665',
     font: '#717171',
-    fontsecondary: '#FFFFFF'
+    fontsecondary: '#FFFFFF',
+    fonttertiary: '#FFB940'
   }
 };
 

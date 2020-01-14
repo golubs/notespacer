@@ -5,7 +5,7 @@ const NewNote = () => {
   return (
     <>
       <MainNavigation />
-      <h2>New Note</h2>
+      <h2>Due Notes</h2>
     </>
   );
 };

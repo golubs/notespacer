@@ -2,9 +2,9 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 import MainHeader from './MainHeader';
-import NavButton from './NavButton';
 import Logo from '../Logo/LogoIcon';
 import MenuButton from './MenuButton';
+import NavLinks from './NavLinks';
 
 const Span = styled.span`
   display: block;
@@ -18,8 +18,7 @@ const MainNavigation = () => {
     <MainHeader>
       <Logo />
       <nav>
-        <NavButton>NOTES</NavButton>
-        <NavButton>DUE</NavButton>
+        <NavLinks />
       </nav>
       <MenuButton>
         <Span />
