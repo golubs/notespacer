@@ -10,7 +10,8 @@ import {
 
 import light from './themes/light';
 import NewNote from './notes/pages/NewNote';
-import Notes from './notes/pages/Notes';
+import Notes from './notes/pages/UserNotes';
+import DueNotes from './notes/pages/DueNotes';
 import Main from './shared/components/Layout/Main';
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
           <Switch>
             <Route path="/" exact>
               <Notes />
+            </Route>
+            <Route path="/notes/due" exact>
+              <DueNotes />
             </Route>
             <Route path="/notes/new" exact>
               <NewNote />
