@@ -1,4 +1,5 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 
@@ -17,20 +18,21 @@ const Ul = styled.ul`
 `;
 
 const Li = styled.li`
-  margin-right: 2rem;
+  margin-right: 1.5rem;
 `;
 
 const NavLinks = () => {
+  const location = useLocation();
   return (
     <Ul>
       <Li>
         <NavLink to="/notes">
-          <NavButton>NOTES</NavButton>
+          <NavButton active={!location.search}>NOTES</NavButton>
         </NavLink>
       </Li>
       <Li>
         <NavLink to={`/notes?duedate_lte=${Date.now()}`}>
-          <NavButton>DUE</NavButton>
+          <NavButton active={location.search}>DUE </NavButton>
         </NavLink>
       </Li>
     </Ul>

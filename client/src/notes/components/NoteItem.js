@@ -18,6 +18,11 @@ const ItemInfo = styled.div`
   text-align: center;
 `;
 
+const DateInfo = styled.div`
+  border-top: 1px solid #327884;
+  text-align: center;
+`;
+
 const ItemActions = styled.div`
   padding: 1rem;
   text-align: center;
@@ -33,9 +38,11 @@ const NoteItem = props => {
         <ItemInfo>
           <h2>{props.title}</h2>
           <p>{props.description}</p>
-          <h3>{duedate.toLocaleDateString()}</h3>
-          <h4>{date.toLocaleDateString()}</h4>
         </ItemInfo>
+        <DateInfo>
+          <h3>{duedate.toLocaleDateString()}</h3>
+          <p>{date.toLocaleDateString()}</p>
+        </DateInfo>
         <ItemActions>
           <button>EDIT</button>
           <button>DELETE</button>
