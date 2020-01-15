@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 
 import Card from '../../shared/components/UIElements/Card';
+import Button from '../../shared/components/FormElements/Button';
 
 const ItemContent = styled(Card)`
   padding: 0;
@@ -44,8 +45,8 @@ const NoteItem = props => {
           <p>{date.toLocaleDateString()}</p>
         </DateInfo>
         <ItemActions>
-          <button>EDIT</button>
-          <button>DELETE</button>
+          <Button>EDIT</Button>
+          <Button>DELETE</Button>
         </ItemActions>
       </ItemContent>
     </Item>
