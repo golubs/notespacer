@@ -17,19 +17,19 @@ const Ul = styled.ul`
 `;
 
 const Li = styled.li`
-  margin: 1rem;
+  margin-right: 2rem;
 `;
 
 const NavLinks = () => {
   return (
     <Ul>
       <Li>
-        <NavLink to="/u1/notes">
+        <NavLink to="/notes">
           <NavButton>NOTES</NavButton>
         </NavLink>
       </Li>
       <Li>
-        <NavLink to="/notes/due">
+        <NavLink to={`/notes?duedate_lte=${Date.now()}`}>
           <NavButton>DUE</NavButton>
         </NavLink>
       </Li>

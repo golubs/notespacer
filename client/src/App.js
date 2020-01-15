@@ -10,29 +10,26 @@ import {
 
 import light from './themes/light';
 import NewNote from './notes/pages/NewNote';
-import Notes from './notes/pages/UserNotes';
-import DueNotes from './notes/pages/DueNotes';
-import Main from './shared/components/Layout/Main';
+import Notes from './notes/pages/Notes';
+import Intro from './user/pages/Intro';
 
 function App() {
   return (
     <ThemeProvider theme={light}>
       <GlobalStyles />
       <Router>
-        <Main>
-          <Switch>
-            <Route path="/" exact>
-              <Notes />
-            </Route>
-            <Route path="/notes/due" exact>
-              <DueNotes />
-            </Route>
-            <Route path="/notes/new" exact>
-              <NewNote />
-            </Route>
-            <Redirect to="/" />
-          </Switch>
-        </Main>
+        <Switch>
+          <Route path="/notes" exact>
+            <Notes />
+          </Route>
+          <Route path="/notes/new" exact>
+            <NewNote />
+          </Route>
+          <Route exact path="/">
+            <Intro />
+          </Route>
+          <Redirect to="/" />
+        </Switch>
       </Router>
     </ThemeProvider>
   );

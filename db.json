@@ -1,0 +1,28 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "Storybook",
+      "description": "Storybook is..",
+      "duedate": 1579084111033,
+      "creatorId": 1,
+      "timestamp": 1578084101033
+    },
+    {
+      "id": 2,
+      "title": "Storybook",
+      "description": "Storybook is..",
+      "duedate": 1579084111033,
+      "creatorId": 2,
+      "timestamp": 1578084101033
+    },
+    {
+      "id": 3,
+      "title": "Storybook",
+      "description": "Storybook is not..",
+      "duedate": 1674084111033,
+      "creatorId": 3,
+      "timestamp": 1578084101033
+    }
+  ]
+}
