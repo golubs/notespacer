@@ -1,0 +1,55 @@
+import React from 'react';
+import styled from '@emotion/styled';
+import PropTypes from 'prop-types';
+
+import Card from '../../shared/components/UIElements/Card';
+
+const ItemContent = styled(Card)`
+  padding: 0;
+`;
+
+const Item = styled.div`
+  margin: 1rem 0;
+  color: black;
+`;
+
+const ItemInfo = styled.div`
+  padding: 1rem;
+  text-align: center;
+`;
+
+const ItemActions = styled.div`
+  padding: 1rem;
+  text-align: center;
+  background: #327884;
+`;
+
+const NoteItem = props => {
+  const date = new Date(props.timestamp);
+  const duedate = new Date(props.duedate);
+  return (
+    <Item>
+      <ItemContent>
+        <ItemInfo>
+          <h2>{props.title}</h2>
+          <p>{props.description}</p>
+          <h3>{duedate.toLocaleDateString()}</h3>
+          <h4>{date.toLocaleDateString()}</h4>
+        </ItemInfo>
+        <ItemActions>
+          <button>EDIT</button>
+          <button>DELETE</button>
+        </ItemActions>
+      </ItemContent>
+    </Item>
+  );
+};
+
+NoteItem.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  duedate: PropTypes.number,
+  timestamp: PropTypes.number
+};
+
+export default NoteItem;

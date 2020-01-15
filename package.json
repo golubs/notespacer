@@ -13,7 +13,8 @@
     "client": "cd client && npm start",
     "storybook": "cd client && npm run storybook",
     "test": "cd client && npm test",
-    "postinstall": "cd client && npm install"
+    "postinstall": "cd client && npm install",
+    "server": "json-server --watch db.json --port 8080 --routes routes.json"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.17.0",
+    "json-server": "^0.15.1",
     "prettier": "1.19.1"
   }
 }
