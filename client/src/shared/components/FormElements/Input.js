@@ -31,9 +31,9 @@ const FormControl = styled.div`
 const Input = props => {
   const element =
     props.element === 'input' ? (
-      <input id={props.id} type={props.type} placeholder={props.placeholder} />
+      <input type={props.type} placeholder={props.placeholder} {...props} />
     ) : (
-      <textarea id={props.id} rows={props.rows || 20} />
+      <textarea rows={props.rows || 16} {...props} />
     );
 
   return (
