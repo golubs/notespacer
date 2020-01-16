@@ -17,17 +17,31 @@ const Notes = () => {
   const [notes, setNotes] = React.useState(null);
   const location = useLocation();
 
-  React.useEffect(() => {
+  const handleDelete = id => {
+    fetch(`/api/notes/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    fetchNotes();
+  };
+
+  const fetchNotes = () => {
     fetch(`/api/notes${location.search}`)
       .then(response => response.json())
       .then(notes => setNotes(notes));
+  };
+
+  React.useEffect(() => {
+    fetchNotes();
   }, [location.search]);
 
   return (
     <div>
       <MainNavigation />
       <Main>
-        {notes && <NoteList notes={notes} />}
+        {notes && <NoteList notes={notes} onDelete={handleDelete} />}
         <NavLink to="/notes/new">
           <FloatingAddButton />
         </NavLink>

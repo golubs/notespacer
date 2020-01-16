@@ -35,6 +35,7 @@ const NoteList = props => {
           duedate={note.duedate}
           creatorId={note.creator}
           timestamp={note.timestamp}
+          onDelete={props.onDelete}
         />
       ))}
     </List>
@@ -42,7 +43,8 @@ const NoteList = props => {
 };
 
 NoteList.propTypes = {
-  notes: PropTypes.array
+  notes: PropTypes.array,
+  onDelete: PropTypes.func
 };
 
 export default NoteList;

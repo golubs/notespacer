@@ -1,8 +1,6 @@
-import React from 'react';
 import styled from '@emotion/styled';
-import PropTypes from 'prop-types';
 
-const ButtonStyled = styled.button`
+const Button = styled.button`
   padding: 0.3rem 1rem;
   border: 1px solid transparent;
   border-radius: 2px;
@@ -21,11 +19,5 @@ const ButtonStyled = styled.button`
     background: ${props => props.theme.colors.fonttertiary};
   }
 `;
-
-const Button = props => <ButtonStyled>{props.children}</ButtonStyled>;
-
-Button.propTypes = {
-  children: PropTypes.node.isRequired
-};
 
 export default Button;

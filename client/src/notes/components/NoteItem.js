@@ -46,7 +46,7 @@ const NoteItem = props => {
         </DateInfo>
         <ItemActions>
           <Button>EDIT</Button>
-          <Button>DELETE</Button>
+          <Button onClick={() => props.onDelete(props.id)}>DELETE</Button>
         </ItemActions>
       </ItemContent>
     </Item>
@@ -57,7 +57,9 @@ NoteItem.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   duedate: PropTypes.number,
-  timestamp: PropTypes.number
+  timestamp: PropTypes.number,
+  id: PropTypes.number,
+  onDelete: PropTypes.func
 };
 
 export default NoteItem;
