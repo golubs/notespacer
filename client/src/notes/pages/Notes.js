@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
 
 import MainNavigation from '../../shared/components/Navigation/MainNavigation';
@@ -26,8 +26,12 @@ const Notes = () => {
   return (
     <div>
       <MainNavigation />
-      <Main>{notes && <NoteList notes={notes} />}</Main>
-      <FloatingAddButton />
+      <Main>
+        {notes && <NoteList notes={notes} />}
+        <NavLink to="/notes/new">
+          <FloatingAddButton />
+        </NavLink>
+      </Main>
     </div>
   );
 };

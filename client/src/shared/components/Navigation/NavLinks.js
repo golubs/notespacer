@@ -18,7 +18,7 @@ const Ul = styled.ul`
 `;
 
 const Li = styled.li`
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 `;
 
 const NavLinks = () => {

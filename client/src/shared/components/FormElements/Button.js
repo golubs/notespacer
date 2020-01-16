@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const ButtonStyled = styled.button`
   padding: 0.3rem 1rem;
-  border: 1px solid ${props => props.theme.colors.secondary};
+  border: 1px solid transparent;
   border-radius: 2px;
   background: transparent;
   margin-right: 0.5rem;
