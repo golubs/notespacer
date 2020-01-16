@@ -1,28 +1,20 @@
 {
   "notes": [
     {
-      "id": 1,
-      "title": "Storybook",
-      "description": "Storybook is...",
-      "duedate": 1579084111033,
-      "creatorId": 1,
-      "timestamp": 1578084101033
+      "title": "Regular Expressions",
+      "description": "g - Search or extract a pattern more than once.",
+      "duedate": 1588084111033,
+      "creatorId": 2,
+      "timestamp": 1579184129357,
+      "id": 4
     },
     {
-      "id": 2,
-      "title": "Storybook",
-      "description": "Storybook is..",
+      "title": "Spanish",
+      "description": "Hasta luego – “See you later”",
       "duedate": 1579084111033,
       "creatorId": 2,
-      "timestamp": 1578084101033
-    },
-    {
-      "id": 3,
-      "title": "Storybook",
-      "description": "Storybook is not..",
-      "duedate": 1674084111033,
-      "creatorId": 3,
-      "timestamp": 1578084101033
+      "timestamp": 1579184349532,
+      "id": 5
     }
   ]
 }

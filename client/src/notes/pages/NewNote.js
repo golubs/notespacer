@@ -44,7 +44,7 @@ const NewNote = () => {
       body: JSON.stringify({
         title: title,
         description: description,
-        duedate: 1579084111033,
+        duedate: 1557871200000,
         creatorId: 2,
         timestamp: Date.now()
       })
